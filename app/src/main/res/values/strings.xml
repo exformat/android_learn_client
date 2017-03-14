@@ -5,6 +5,8 @@
     <string name="double_dot">:</string>
     <string name="from">from</string>
     <string name="OK">OK</string>
+    <string name="your_name">Your name:</string>
+    <string name="anonymous">Anonymous</string>
     <string name="input_name">Input name</string>
     <string name="message_can_no_be_empty">Message no be empty</string>
 </resources>

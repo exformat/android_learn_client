@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -41,8 +42,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_input_name"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="175dp" />
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="175dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:text="@string/your_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/your_name"
+            android:layout_marginTop="35dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="@string/anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_name"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/avatar"
+            android:id="@+id/btn_avatar"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:contentDescription="" />
 
     </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
 

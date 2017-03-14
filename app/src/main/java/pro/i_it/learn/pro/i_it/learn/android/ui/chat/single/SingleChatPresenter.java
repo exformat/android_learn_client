@@ -6,6 +6,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import pro.i_it.learn.R;
 import pro.i_it.learn.pro.i_it.learn.android.LearnApp;
 import pro.i_it.learn.pro.i_it.learn.android.remote.retorfit.model.MessageModel;
+import pro.i_it.learn.pro.i_it.learn.android.ui.Drawer.NameModel;
 
 /**
  * Created by syn on 08.03.17.
@@ -63,8 +64,11 @@ public class SingleChatPresenter implements ISingleChatViewPresenter {
 
     private void sendMessage(String message) {
         MessageModel messageModel = new MessageModel();
+        //===============================
+        NameModel name = new NameModel();
+        //===============================
         messageModel.setMessage(message);
-        messageModel.setFrom("Android App"); //TODO fix me please =_=
+        messageModel.setFrom(name.getInputName()); //TODO fix me please =_= // вроде fixed =)
         LearnApp.getModuleManager()
                 .getRemoteManager()
                 .getSocketIoManager()
