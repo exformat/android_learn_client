@@ -27,6 +27,23 @@
             android:layout_height="wrap_content"
             android:text="@string/drawer" />
 
+        <EditText
+            android:hint="@string/input_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/input_name"
+            android:layout_marginTop="75dp" />
+
+        <Button
+            android:text="@string/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_input_name"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="175dp" />
+
     </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
 
 </com.mxn.soul.flowingdrawer_core.FlowingDrawer>
