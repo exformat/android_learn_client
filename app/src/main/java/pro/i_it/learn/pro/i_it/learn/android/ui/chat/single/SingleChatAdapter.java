@@ -35,7 +35,7 @@ public class SingleChatAdapter extends RecyclerView.Adapter<SingleChatAdapter.Ho
 
     @Override
     public void onBindViewHolder(Holder holder, int position) {
-        holder.from.setText((messageModels.get(position).getFrom() == null || messageModels.get(position).getFrom().isEmpty()) ? "From not Set" : messageModels.get(position).getFrom());
+        holder.from.setText((messageModels.get(position).getFrom() == null || messageModels.get(position).getFrom().isEmpty()) ? "Anonymous" : messageModels.get(position).getFrom());
         holder.message.setText(messageModels.get(position).getMessage());
     }
 

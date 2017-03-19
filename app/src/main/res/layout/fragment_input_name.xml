@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:elevation="0dp"
+                android:background="@color/colorPrimary">
+
+
+    <EditText
+        android:hint="@string/input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/input_name"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:text="@string/your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_name"
+        android:textSize="14sp"
+        android:layout_above="@+id/btn_input_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:text="@string/anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_name"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded"
+        android:layout_alignBottom="@+id/your_name"
+        android:layout_toEndOf="@+id/your_name"/>
+
+    <Button
+        android:text="@string/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_input_name"
+        tools:ignore="RtlHardcoded"
+        android:layout_alignBaseline="@+id/input_name"
+        android:layout_alignBottom="@+id/input_name"
+        android:layout_toEndOf="@+id/input_name"/>
+
+</RelativeLayout>
