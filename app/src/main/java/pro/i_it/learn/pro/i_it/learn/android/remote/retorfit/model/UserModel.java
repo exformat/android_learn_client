@@ -5,7 +5,7 @@ package pro.i_it.learn.pro.i_it.learn.android.remote.retorfit.model;
  */
 
 public class UserModel {
-    private String nickName;
+    private static String nickName;
 
     public void setNickName(String nickName){
         this.nickName = nickName;
