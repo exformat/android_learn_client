@@ -26,11 +26,11 @@ import pro.i_it.learn.pro.i_it.learn.android.remote.retorfit.model.UserModel;
 public class InputNameFragment extends Fragment {
 
     @BindView(R.id.btn_input_name)
-    Button btn_input_name;
+    protected Button btn_input_name;
     @BindView(R.id.input_name)
-    EditText input_name;
+    protected EditText input_name;
     @BindView(R.id.text_view_name)
-    TextView nameView;
+    protected TextView nameView;
 
     /*
     public static final String APP_PREFERENCES = "my_nick_name";
