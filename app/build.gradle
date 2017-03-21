@@ -63,6 +63,14 @@ dependencies {
         exclude group: 'org.json', module: 'json'
     }
 
+    //округлое оформление выплывающего окошка
+    //ппц бредовые я комментарии оставляю
+    compile 'com.rom4ek:arcnavigationview:1.0.2'
+    // факин щит.. сложна.. на примере попроще разберусь, потом и тут прикрутить попробую
+
+    //диагональка
+    compile 'com.github.florent37:diagonallayout:1.0.4'
+
     compile 'com.android.support:recyclerview-v7:25.1.0'
     testCompile 'junit:junit:4.12'
 }

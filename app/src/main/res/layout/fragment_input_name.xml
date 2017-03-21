@@ -46,6 +46,10 @@
         tools:ignore="RtlHardcoded"
         android:layout_alignBaseline="@+id/input_name"
         android:layout_alignBottom="@+id/input_name"
-        android:layout_toEndOf="@+id/input_name"/>
+        android:layout_toEndOf="@+id/input_name"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        style="@style/Widget.AppCompat.Button.Small"/>
 
 </RelativeLayout>
